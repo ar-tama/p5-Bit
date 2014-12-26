@@ -14,7 +14,7 @@ subtest 'open' => sub {
         }
     );
     $bit->open;
-    is $result, 'open https://github.com/ar-tama/Bit';
+    is $result, 'open https://github.com/ar-tama/p5-Bit';
 };
 
 subtest 'pr' => sub {
@@ -29,14 +29,14 @@ subtest 'pr' => sub {
         my $current = `git symbolic-ref --short HEAD`;
         chomp $current;
         $bit->pr;
-        is $result, "open 'https://github.com/ar-tama/Bit/compare/master...$current?expand=1'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/compare/master...$current?expand=1'";
     };
 
     subtest 'with base branch' => sub {
         my $current = `git symbolic-ref --short HEAD`;
         chomp $current;
         $bit->pr({base => 'development'});
-        is $result, "open 'https://github.com/ar-tama/Bit/compare/development...$current?expand=1'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/compare/development...$current?expand=1'";
     };
 };
 
@@ -52,16 +52,16 @@ subtest 'compare' => sub {
         my $current = `git symbolic-ref --short HEAD`;
         chomp $current;
         $bit->compare;
-        is $result, "open 'https://github.com/ar-tama/Bit/compare/master...$current'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/compare/master...$current'";
         $bit->compare({head => 'current'});
-        is $result, "open 'https://github.com/ar-tama/Bit/compare/master...$current'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/compare/master...$current'";
     };
 
     subtest 'with head, base branch' => sub {
         my $current = `git symbolic-ref --short HEAD`;
         chomp $current;
         $bit->compare({base => 'master', head => 'development'});
-        is $result, "open 'https://github.com/ar-tama/Bit/compare/master...development'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/compare/master...development'";
     };
 };
 
@@ -75,12 +75,12 @@ subtest 'pulls' => sub {
 
     subtest 'pulls' => sub {
         $bit->pulls;
-        is $result, "open 'https://github.com/ar-tama/Bit/pulls'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/pulls'";
     };
 
     subtest 'with num' => sub {
         $bit->pulls({id => 12});
-        is $result, "open 'https://github.com/ar-tama/Bit/pull/12'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/pull/12'";
     };
 };
 
@@ -94,12 +94,12 @@ subtest 'issues' => sub {
 
     subtest 'issues' => sub {
         $bit->issues;
-        is $result, "open 'https://github.com/ar-tama/Bit/issues'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/issues'";
     };
 
     subtest 'with num' => sub {
         $bit->issues({id => 12});
-        is $result, "open 'https://github.com/ar-tama/Bit/issues/12'";
+        is $result, "open 'https://github.com/ar-tama/p5-Bit/issues/12'";
     };
 };
 

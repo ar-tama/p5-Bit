@@ -9,7 +9,7 @@ use Class::Accessor::Lite (
     rw => [qw/domain repo_type templates current_branch/],
 );
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 sub new {
     my ($class, %args) = @_;

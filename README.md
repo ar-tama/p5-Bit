@@ -20,4 +20,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-ar\_tama <arata.makoto@gmail.com>
+ar\_tama <arata.makoto at gmail.com>
