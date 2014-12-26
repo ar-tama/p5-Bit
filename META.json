@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Tiny github and bitbucket helper",
    "author" : [
-      "ar_tama <makoto.arata@dena.com>"
+      "ar_tama <arata.makoto at gmail.com>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.11.0, CPAN::Meta::Converter version 2.132830",
@@ -43,15 +43,34 @@
       },
       "runtime" : {
          "requires" : {
+            "Carp" : "0",
+            "Class::Accessor::Lite" : "0",
+            "Getopt::Compact::WithCmd" : "0",
+            "URI::Template" : "0",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
+            "Test::Mock::Guard" : "0",
             "Test::More" : "0.98"
          }
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ar-tama/Bit/issues"
+      },
+      "homepage" : "https://github.com/ar-tama/Bit",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ar-tama/Bit.git",
+         "web" : "https://github.com/ar-tama/Bit"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "ar_tama <arata.makoto@gmail.com>"
+   ]
 }
