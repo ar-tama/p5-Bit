@@ -2,6 +2,9 @@ Revision history for Perl extension Bit
 
 {{$NEXT}}
 
+0.03 2014-12-26T15:57:14Z
+ Fix shebang as CPAN package
+
 0.02 2014-12-26T15:28:32Z
 
     - original version

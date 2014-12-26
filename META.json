@@ -69,8 +69,10 @@
          "web" : "https://github.com/ar-tama/p5-Bit"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_contributors" : [
-      "ar_tama <arata.makoto@gmail.com>"
+      "Syohei YOSHIDA <syohex@gmail.com>",
+      "ar_tama <arata.makoto@gmail.com>",
+      "ar-tama <ar_tama@live.jp>"
    ]
 }
